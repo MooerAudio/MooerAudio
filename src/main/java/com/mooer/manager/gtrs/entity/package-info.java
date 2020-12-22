@@ -1,0 +1,1 @@
+package com.mooer.manager.gtrs.entity;
