@@ -34,6 +34,7 @@ public interface GoodsMapper extends BaseMapper<Goods> {
 			+ "a.category3_id,            "//
 			+ "a.small_pic,               "//
 			+ "a.price,                   "//
+			+ "a.type_templates,          "//
 			+ "a.type_template_id,        "//
 			+ "a.is_enable_spec,          "//
 			+ "a.is_delete,               "//
@@ -45,7 +46,7 @@ public interface GoodsMapper extends BaseMapper<Goods> {
 			+ "b.custom_attribute_items,  "//
 			+ "b.item_images,             "//
 			+ "b.package_list,            "//
-			+ "b.modular				  "//
+			+ "b.modular,				  "//
 			+ "b.sale_service,            "//
 			+ "b.video_url,               "//
 			+ "b.features,                "//
@@ -88,7 +89,7 @@ public interface GoodsMapper extends BaseMapper<Goods> {
 					+ "b.custom_attribute_items,  "//
 					+ "b.item_images,             "//
 					+ "b.package_list,            "//
-					+ "b.modular				  "//
+					+ "b.modular,				  "//
 					+ "b.sale_service,            "//
 					+ "b.video_url,               "//
 					+ "b.features,                "//

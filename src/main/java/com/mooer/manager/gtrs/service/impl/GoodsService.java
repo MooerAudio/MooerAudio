@@ -55,6 +55,7 @@ public class GoodsService extends ServiceImpl<GoodsMapper, Goods> implements IGo
 		entity.setLargePic(goods.getLargePic());
 		entity.setPrice(goods.getPrice());
 		entity.setSmallPic(goods.getSmallPic());
+		entity.setTypeTemplates(goods.getTypeTemplates());
 		entity.setTypeTemplateId(goods.getTypeTemplateId());
 		entity.setBuyUrl(goods.getBuyUrl());
 		entity.setDescription(goods.getDescription());
@@ -138,6 +139,7 @@ public class GoodsService extends ServiceImpl<GoodsMapper, Goods> implements IGo
 		entity.setLargePic(goods.getLargePic());
 		entity.setPrice(goods.getPrice());
 		entity.setSmallPic(goods.getSmallPic());
+		entity.setTypeTemplates(goods.getTypeTemplates());
 		entity.setTypeTemplateId(goods.getTypeTemplateId());
 		entity.setBuyUrl(goods.getBuyUrl());
 		entity.setDescription(goods.getDescription());

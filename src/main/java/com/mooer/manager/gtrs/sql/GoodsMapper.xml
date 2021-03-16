@@ -15,6 +15,7 @@
         <result column="category3_id" property="category3Id" />
         <result column="small_pic" property="smallPic" />
         <result column="price" property="price" />
+        <result column="type_templates" property="typeTemplates" />
         <result column="type_template_id" property="typeTemplateId" />
         <result column="is_enable_spec" property="isEnableSpec" />
         <result column="is_delete" property="isDelete" />
@@ -25,7 +26,7 @@
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, goods_name, default_item_id, status, is_marketable, caption, category1_id, category2_id, category3_id, small_pic, price, type_template_id, is_enable_spec, is_delete, large_pic, buy_url, description
+        id, goods_name, default_item_id, status, is_marketable, caption, category1_id, category2_id, category3_id, small_pic, price, type_template_id, type_templates, is_enable_spec, is_delete, large_pic, buy_url, description
     </sql>
 
 </mapper>

@@ -77,6 +77,11 @@ public class Goods extends Model<Goods> {
     private BigDecimal price;
 
     /**
+     * 分类模板
+     */
+    private Long typeTemplates;
+
+    /**
      * 分类模板ID
      */
     private Long typeTemplateId;
@@ -195,6 +200,14 @@ public class Goods extends Model<Goods> {
         this.price = price;
     }
 
+    public Long getTypeTemplates() {
+        return typeTemplates;
+    }
+
+    public void setTypeTemplates(Long typeTemplates) {
+        this.typeTemplates = typeTemplates;
+    }
+
     public Long getTypeTemplateId() {
         return typeTemplateId;
     }
@@ -262,6 +275,7 @@ public class Goods extends Model<Goods> {
         ", category3Id=" + category3Id +
         ", smallPic=" + smallPic +
         ", price=" + price +
+                ", typeTemplates=" + typeTemplates +
         ", typeTemplateId=" + typeTemplateId +
         ", isEnableSpec=" + isEnableSpec +
         ", isDelete=" + isDelete +

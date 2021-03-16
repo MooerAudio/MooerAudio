@@ -51,6 +51,11 @@ public class GoodsInsert {
      */
     private BigDecimal price;
 
+	/**
+	 * 分类模板
+	 */
+	private Long typeTemplates;
+
     /**
      * 分类模板ID
      */
@@ -231,6 +236,14 @@ public class GoodsInsert {
 
 	public void setPrice(BigDecimal price) {
 		this.price = price;
+	}
+
+	public Long getTypeTemplates() {
+		return typeTemplates;
+	}
+
+	public void setTypeTemplates(Long typeTemplates) {
+		this.typeTemplates = typeTemplates;
 	}
 
 	public Long getTypeTemplateId() {
