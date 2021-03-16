@@ -54,7 +54,7 @@ public class GoodsInsert {
 	/**
 	 * 分类模板
 	 */
-	private Long typeTemplates;
+	private String typeTemplates;
 
     /**
      * 分类模板ID
@@ -238,11 +238,11 @@ public class GoodsInsert {
 		this.price = price;
 	}
 
-	public Long getTypeTemplates() {
+	public String getTypeTemplates() {
 		return typeTemplates;
 	}
 
-	public void setTypeTemplates(Long typeTemplates) {
+	public void setTypeTemplates(String typeTemplates) {
 		this.typeTemplates = typeTemplates;
 	}
 

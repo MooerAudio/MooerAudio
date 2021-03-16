@@ -79,7 +79,7 @@ public class Goods extends Model<Goods> {
     /**
      * 分类模板
      */
-    private Long typeTemplates;
+    private String typeTemplates;
 
     /**
      * 分类模板ID
@@ -200,11 +200,11 @@ public class Goods extends Model<Goods> {
         this.price = price;
     }
 
-    public Long getTypeTemplates() {
+    public String getTypeTemplates() {
         return typeTemplates;
     }
 
-    public void setTypeTemplates(Long typeTemplates) {
+    public void setTypeTemplates(String typeTemplates) {
         this.typeTemplates = typeTemplates;
     }
 
