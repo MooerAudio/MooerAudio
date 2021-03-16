@@ -45,6 +45,7 @@ public interface GoodsMapper extends BaseMapper<Goods> {
 			+ "b.custom_attribute_items,  "//
 			+ "b.item_images,             "//
 			+ "b.package_list,            "//
+			+ "b.modular				  "//
 			+ "b.sale_service,            "//
 			+ "b.video_url,               "//
 			+ "b.features,                "//
@@ -87,6 +88,7 @@ public interface GoodsMapper extends BaseMapper<Goods> {
 					+ "b.custom_attribute_items,  "//
 					+ "b.item_images,             "//
 					+ "b.package_list,            "//
+					+ "b.modular				  "//
 					+ "b.sale_service,            "//
 					+ "b.video_url,               "//
 					+ "b.features,                "//

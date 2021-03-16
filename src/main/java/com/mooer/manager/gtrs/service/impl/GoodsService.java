@@ -68,6 +68,7 @@ public class GoodsService extends ServiceImpl<GoodsMapper, Goods> implements IGo
 			desc.setIntroduction(goods.getIntroduction());
 			desc.setItemImages(goods.getItemImages());
 			desc.setPackageList(goods.getPackageList());
+			desc.setModular(goods.getModular());
 			desc.setSaleService(goods.getSaleService());
 			desc.setSpecificationItems(goods.getSpecificationItems());
 			desc.setVideoUrl(goods.getVideoUrl());
@@ -150,6 +151,7 @@ public class GoodsService extends ServiceImpl<GoodsMapper, Goods> implements IGo
 			desc.setIntroduction(goods.getIntroduction());
 			desc.setItemImages(goods.getItemImages());
 			desc.setPackageList(goods.getPackageList());
+			desc.setModular(goods.getModular());
 			desc.setSaleService(goods.getSaleService());
 			desc.setSpecificationItems(goods.getSpecificationItems());
 			desc.setVideoUrl(goods.getVideoUrl());

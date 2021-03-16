@@ -45,6 +45,11 @@ public class GoodsDesc extends Model<GoodsDesc> {
     private String packageList;
 
     /**
+     * 模块
+     */
+    private String modular;
+
+    /**
      * 售后服务
      */
     private String saleService;
@@ -139,6 +144,10 @@ public class GoodsDesc extends Model<GoodsDesc> {
     public void setPackageList(String packageList) {
         this.packageList = packageList;
     }
+
+    public String getModular(){ return modular; }
+
+    public void setModular(String modular) { this.modular = modular; }
 
     public String getSaleService() {
         return saleService;
@@ -242,6 +251,7 @@ public class GoodsDesc extends Model<GoodsDesc> {
         ", customAttributeItems=" + customAttributeItems +
         ", itemImages=" + itemImages +
         ", packageList=" + packageList +
+                ", modular=" + modular +
         ", saleService=" + saleService +
         ", videoUrl=" + videoUrl +
         ", features=" + features +

@@ -99,6 +99,11 @@ public class GoodsInsert {
      */
     private String packageList;
 
+	/**
+	 * 模块
+	 */
+	private String modular;
+
     /**
      * 售后服务
      */
@@ -306,6 +311,14 @@ public class GoodsInsert {
 
 	public void setPackageList(String packageList) {
 		this.packageList = packageList;
+	}
+
+	public String getModular() {
+		return modular;
+	}
+
+	public void setModular(String modular) {
+		this.modular = modular;
 	}
 
 	public String getSaleService() {

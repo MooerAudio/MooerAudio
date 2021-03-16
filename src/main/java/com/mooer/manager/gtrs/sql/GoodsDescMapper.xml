@@ -10,6 +10,7 @@
         <result column="custom_attribute_items" property="customAttributeItems" />
         <result column="item_images" property="itemImages" />
         <result column="package_list" property="packageList" />
+        <result column="modular" property="modular" />
         <result column="sale_service" property="saleService" />
         <result column="video_url" property="videoUrl" />
         <result column="features" property="features" />
@@ -25,7 +26,7 @@
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        goods_id, introduction, specification_items, custom_attribute_items, item_images, package_list, sale_service, video_url, features, connections, attachments, instructions, banner_url, desc_img_url, audio_url, attachments_desc, specification_line
+        goods_id, introduction, specification_items, custom_attribute_items, item_images, package_list, modular, sale_service, video_url, features, connections, attachments, instructions, banner_url, desc_img_url, audio_url, attachments_desc, specification_line
     </sql>
 
 </mapper>
