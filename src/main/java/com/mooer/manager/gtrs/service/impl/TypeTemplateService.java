@@ -16,6 +16,8 @@ import com.mooer.manager.gtrs.pojo.TypeTemplate;
 import com.mooer.manager.gtrs.service.ITypeTemplateService;
 import com.mooer.manager.gtrs.plugin.pojo.Pageable;
 
+import java.util.List;
+
 /**
  * <p>
  *  服务实现类
@@ -89,6 +91,23 @@ public class TypeTemplateService extends ServiceImpl<TypeTemplateMapper, TypeTem
 		}else {
 			return null;
 		}
+	}
+
+	@Override
+	public List<TypeTemplate> templatechange(TypeTemplate record) {
+		QueryWrapper<TypeTemplate> wrapper = new QueryWrapper<>();
+
+		if (!StringUtils.isEmpty(record.getId())) //
+		{
+			wrapper.eq("id", record.getId());
+		}
+
+		if (!StringUtils.isEmpty(record.getName())) //
+		{
+			wrapper.like("UPPER(name)", record.getName().toUpperCase());
+		}
+
+		return typeTemplateMapper.selectList(wrapper);
 	}
 
 }

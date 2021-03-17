@@ -8,6 +8,8 @@ import com.mooer.manager.gtrs.plugin.pojo.Pageable;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.List;
+
 /**
  * <p>
  *  服务类
@@ -23,5 +25,7 @@ public interface ITypeTemplateService extends IService<TypeTemplate> {
 	IPage<TypeTemplate> query(TypeTemplateQuery condition, Pageable pageable);
 
 	TypeTemplate update(TypeTemplateUpdate record);
+
+	List<TypeTemplate> templatechange(TypeTemplate record);
 
 }
