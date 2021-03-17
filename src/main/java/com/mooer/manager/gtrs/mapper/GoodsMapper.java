@@ -78,6 +78,7 @@ public interface GoodsMapper extends BaseMapper<Goods> {
 					+ "a.category3_id,            "//
 					+ "a.small_pic,               "//
 					+ "a.price,                   "//
+					+ "a.type_templates,          "//
 					+ "a.type_template_id,        "//
 					+ "a.is_enable_spec,          "//
 					+ "a.is_delete,               "//
