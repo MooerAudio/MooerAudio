@@ -10,10 +10,10 @@ import java.io.Serializable;
  * </p>
  *
  * @author main
- * @since 2020-09-28
+ * @since 2021-04-09
  */
-@TableName("m_goods_desc")
-public class GoodsDesc extends Model<GoodsDesc> {
+@TableName("m_footstep_desc")
+public class FootstepDesc extends Model<FootstepDesc> {
 
     private static final long serialVersionUID=1L;
 
@@ -96,7 +96,7 @@ public class GoodsDesc extends Model<GoodsDesc> {
     private String specificationLine;
 
 
-    
+
     public Long getGoodsId() {
         return goodsId;
     }
@@ -241,24 +241,24 @@ public class GoodsDesc extends Model<GoodsDesc> {
     @Override
     public String toString() {
         return "GoodsDesc{" +
-        "goodsId=" + goodsId +
-        ", introduction=" + introduction +
-        ", specificationItems=" + specificationItems +
-        ", customAttributeItems=" + customAttributeItems +
-        ", itemImages=" + itemImages +
-        ", packageList=" + packageList +
+                "goodsId=" + goodsId +
+                ", introduction=" + introduction +
+                ", specificationItems=" + specificationItems +
+                ", customAttributeItems=" + customAttributeItems +
+                ", itemImages=" + itemImages +
+                ", packageList=" + packageList +
                 ", modular=" + modular +
-        ", saleService=" + saleService +
-        ", videoUrl=" + videoUrl +
-        ", features=" + features +
-        ", connections=" + connections +
-        ", attachments=" + attachments +
-        ", instructions=" + instructions +
-        ", bannerUrl=" + bannerUrl +
-        ", descImgUrl=" + descImgUrl +
-        ", audioUrl=" + audioUrl +
-        ", attachmentsDesc=" + attachmentsDesc +
-        ", specificationLine=" + specificationLine +
-        "}";
+                ", saleService=" + saleService +
+                ", videoUrl=" + videoUrl +
+                ", features=" + features +
+                ", connections=" + connections +
+                ", attachments=" + attachments +
+                ", instructions=" + instructions +
+                ", bannerUrl=" + bannerUrl +
+                ", descImgUrl=" + descImgUrl +
+                ", audioUrl=" + audioUrl +
+                ", attachmentsDesc=" + attachmentsDesc +
+                ", specificationLine=" + specificationLine +
+                "}";
     }
 }
