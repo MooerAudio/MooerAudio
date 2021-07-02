@@ -34,11 +34,6 @@ public class Contact extends Model<Contact> {
     private String email;
 
     /**
-     * 消息分类
-     */
-    private String category;
-
-    /**
      * 消息
      */
     private String message;
@@ -86,14 +81,6 @@ public class Contact extends Model<Contact> {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
     }
 
     public String getMessage() {
@@ -147,7 +134,6 @@ public class Contact extends Model<Contact> {
         "id=" + id +
         ", name=" + name +
         ", email=" + email +
-        ", category=" + category +
         ", message=" + message +
         ", remark=" + remark +
         ", createTime=" + createTime +
