@@ -1,12 +1,14 @@
 package com.mooer.manager.gtrs.pojo;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import java.io.Serializable;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author main
@@ -20,7 +22,8 @@ public class Distributor extends Model<Distributor> {
     /**
      * 主键
      */
-    private Long id;
+    @TableId(type = IdType.ID_WORKER_STR)
+    private String id;
 
     /**
      * 经销商
@@ -38,11 +41,11 @@ public class Distributor extends Model<Distributor> {
     private String city;
 
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

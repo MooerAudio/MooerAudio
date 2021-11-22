@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mooer.manager.gtrs.mapper.EnDistributorMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mooer.manager.gtrs.pojo.EnDistributor">
+        <id column="id" property="id" />
+        <result column="continent_id" property="continentId" />
+        <result column="continent_name" property="continentName" />
+        <result column="region" property="region" />
+        <result column="company" property="company" />
+        <result column="website" property="website" />
+        <result column="address" property="address" />
+        <result column="telephone" property="telephone" />
+        <result column="email" property="email" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, continent_id, continent_name, region, company, website, address, telephone, email
+    </sql>
+
+</mapper>
