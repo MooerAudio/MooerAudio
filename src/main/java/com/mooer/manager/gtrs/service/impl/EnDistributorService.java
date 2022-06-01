@@ -28,10 +28,10 @@ public class EnDistributorService extends ServiceImpl<EnDistributorMapper, EnDis
     @Override
     public IPage<EnDistributor> query(EnDistributor condition, Pageable pageable) {
         QueryWrapper<EnDistributor> wapper = new QueryWrapper<>();
-        if (condition.getContinentId()!=null){
+        if (condition.getContinentId()!=""){
             wapper.eq("continent_id", condition.getContinentId());
         }
-        if (condition.getCompany()!=null){
+        if (condition.getCompany()!=""){
             wapper.like("company",condition.getCompany());
         }
 
