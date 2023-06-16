@@ -27,7 +27,7 @@ public class ExperienceStore extends Model<ExperienceStore> {
 
     /**线下体验店Id*/
     @TableId(value = "id",type = IdType.AUTO)
-    @ApiModelProperty(value = "线下体验店Id")
+    @ApiModelProperty(value = "线下体验店id")
     private Long id;
     /**menuId*/
     @ApiModelProperty(value = "menuId")
