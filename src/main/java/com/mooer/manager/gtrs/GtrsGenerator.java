@@ -35,7 +35,7 @@ public class GtrsGenerator {
 				.setBaseColumnList(true); // 基本的sql片段
 		// 2.配置数据源
 		DataSourceConfig dataSourceConfig = new DataSourceConfig();
-		dataSourceConfig.setUrl("jdbc:mysql://192.168.100.99:3306/m_gtrs")//
+		dataSourceConfig.setUrl("jdbc:mysql://192.168.100.99:3306/zh_gtrs")//
 				.setUsername("root")//
 				.setPassword("root")//
 				.setDriverName("com.mysql.jdbc.Driver").setTypeConvert(new MySqlTypeConvert() {
@@ -110,7 +110,8 @@ public class GtrsGenerator {
 				.setNaming(NamingStrategy.underline_to_camel) // 数据库字段下划线转驼峰命令策略
 				.setTablePrefix("m_") // 设置表前缀
 				.setInclude(//
-						"m_country"
+//						"m_experience_store",
+						"m_experience_store"
 						); // 设置需要生成的表
 		// 4.包名策略配置
 		PackageConfig packageConfig = new PackageConfig();
